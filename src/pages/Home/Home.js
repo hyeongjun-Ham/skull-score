@@ -1,10 +1,18 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import '../../styles/Home.css';
 
 const Home = () => {
+
+    const navigate = useNavigate();
+
+    const toScore = () =>{
+        navigate('/score');
+    };
+
     return (
         <div className="home">
-            <h1>Welcome to the Home Page</h1>
-            <p>This is the first page of your application.</p>
+            <button onClick={toScore}> 입장스~ </button>
         </div>
     );
 };
