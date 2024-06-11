@@ -1,8 +1,47 @@
-.top {
-    color: black;
-    position: fixed;
-    top: 1rem;
-    left: 100;
-    right: 100;
-    bottom: 50;
+.score-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.title {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2em;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.score-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* 1 열 (이름) + 10 열 (라운드) + 1 열 (총점) */
+    gap: 10px;
+}
+
+.grid-header, .grid-row {
+    display: contents;
+}
+
+.grid-header-item, .grid-item {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.grid-header-item {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.grid-row:nth-child(even) .grid-item {
+    background-color: #f9f9f9;
+}
+
+.grid-row:hover .grid-item {
+    background-color: #f1f1f1;
 }
