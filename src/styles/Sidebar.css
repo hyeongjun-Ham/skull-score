@@ -1,4 +1,3 @@
-/* Sidebar.css */
 .sidebar {
     height: 100%;
     width: 250px;
@@ -7,16 +6,23 @@
     left: 0;
     background-color: #111;
     padding-top: 20px;
+    overflow-y: auto;
 }
 
-.sidebar a {
+.sidebar button {
+    display: block;
+    width: 100%;
     padding: 10px 15px;
-    text-decoration: none;
     font-size: 18px;
     color: #818181;
-    display: block;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    margin-bottom: 5px; /* 버튼 간의 간격 추가 */
 }
 
-.sidebar a:hover {
+.sidebar button:hover {
     color: #f1f1f1;
+    background-color: #333;
 }
