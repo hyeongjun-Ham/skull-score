@@ -1,0 +1,14 @@
+{
+    "data": {
+        "playerList": [
+            { "name": "1", "tableNum" : 0, "isWinner" : "Y"},
+            { "name": "2", "tableNum" : 1 ,"isWinner" : "N"},
+            { "name": "3", "tableNum" : 2 ,"isWinner" : "N"},
+            { "name": "4", "tableNum" : 3 ,"isWinner" : "N"},
+            { "name": "5", "tableNum" : 4 ,"isWinner" : "N"},
+            { "name": "6", "tableNum" : 5 ,"isWinner" : "N"},
+            { "name": "7", "tableNum" : 6 ,"isWinner" : "N"},
+            { "name": "8", "tableNum" : 7 ,"isWinner" : "N"}
+        ]
+    }
+}

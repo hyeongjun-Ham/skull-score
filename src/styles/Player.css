@@ -1,0 +1,13 @@
+.player {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+  }
+  
+  .crown {
+    margin-left: 10px;
+    color: gold;
+  }
+  

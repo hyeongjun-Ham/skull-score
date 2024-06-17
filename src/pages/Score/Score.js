@@ -3,6 +3,8 @@ import Sidebar from '../../components/Sidebar';
 import '../../styles/Score.css'
 import scoreData from '../../data/mockScore.json'
 import Topbar from '../../components/Topbar';
+import Table from '../../components/Table';
+
 
 const Score = () => {
     const [players, setPlayers] = useState([]);
@@ -20,9 +22,7 @@ const Score = () => {
         <div className="score-page">
             <Sidebar />
             <Topbar />
-            <div>
-                
-            </div>
+            <Table />
             <div className="content">
                 <div className="score-grid">
                     <div className="grid-header">
