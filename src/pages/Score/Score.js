@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Sidebar from '../../components/Sidebar';
 import '../../styles/Score.css'
 import scoreData from '../../data/mockScore.json'
+import Topbar from '../../components/Topbar';
 
 const Score = () => {
     const [players, setPlayers] = useState([]);
@@ -14,11 +15,14 @@ const Score = () => {
         }
     }, []);
 
-    
+
     return (
         <div className="score-page">
-            <h1 className="title">스컬킹</h1>
             <Sidebar />
+            <Topbar />
+            <div>
+                
+            </div>
             <div className="content">
                 <div className="score-grid">
                     <div className="grid-header">
