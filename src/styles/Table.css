@@ -1,10 +1,10 @@
 /* Table.css */
 .table-container {
   position: relative;
-  width: 600px; /* 테이블 이미지의 가로 크기 */
-  height: 200px; /* 테이블 이미지의 세로 크기 */
+  width: 550px; /* 테이블 이미지의 가로 크기 */
+  height: 180px; /* 테이블 이미지의 세로 크기 */
   margin: 0 auto; /* 페이지 중앙에 배치 */
-  padding : 100px;
+  padding : 80px;
 }
 
 .tableImage {
