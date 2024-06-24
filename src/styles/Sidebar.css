@@ -26,3 +26,39 @@
     color: #f1f1f1;
     background-color: #333;
 }
+/* 아코디언 스타일 */
+.accordion {
+    background-color: #111;
+    color: #818181;
+    cursor: pointer;
+    padding: 10px 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: 0.4s;
+    margin-bottom: 5px; /* 버튼 간의 간격 추가 */
+}
+
+.accordion:hover {
+    color: #f1f1f1;
+    background-color: #333;
+}
+
+.accordion.active, .accordion:hover {
+    background-color: #333;
+}
+
+.accordion-content {
+    background-color: #555;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    max-height: 0; /* 기본적으로 접혀진 상태 */
+    padding: 0 15px;
+}
+
+.accordion-content.show {
+    max-height: 200px; /* 필요에 따라 max-height 값 조정 */
+    padding: 10px 15px;
+}

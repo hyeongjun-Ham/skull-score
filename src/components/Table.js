@@ -2,24 +2,31 @@ import React, { useEffect, useState } from "react";
 import Player from './Player';
 import tableImg from '../assets/Table.png';
 import '../styles/Table.css';
-import mockPlayerData from '../data/mockPlayers.json'
+import axios from "axios";
 
-const Table = () => {
-
-  const [players, setPlayer] = useState([]);
+const Table = ({ selectedDate, selectedRound }) => {
+  const [players, setPlayers] = useState([]);
 
   useEffect(() => {
-    if (mockPlayerData && mockPlayerData.data && Array.isArray(mockPlayerData.data.playerList)) {
-      setPlayer(mockPlayerData.data.playerList);
-    } else {
-      console.error('Data format is incorrect');
+    if (selectedDate && selectedRound) {
+      axios.post('http://192.168.0.7:3000/game/rounds/player', {
+        "game_date": selectedDate,
+        "round": selectedRound
+      })
+        .then(function (response) {
+          setPlayers(response.data.data);
+          console.log(response.data.data);
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
     }
-  }, []);
+  }, [selectedDate, selectedRound]);
 
   const tablePositions = {
     0: { top: '55%', left: '15%' },
-    1: { top: '58%', left: '37%' },
-    2: { top: '58%', left: '59%' },
+    1: { top: '62%', left: '37%' },
+    2: { top: '62%', left: '59%' },
     3: { top: '55%', left: '83%' },
     4: { top: '30%', left: '83%' },
     5: { top: '22%', left: '59%' },
@@ -34,10 +41,10 @@ const Table = () => {
       {players.map((player, index) => (
         <Player
           key={index}
-          tableNum={player.tableNum}
-          name={player.name}
+          tableNum={index}
+          name={player.player}
           isWinner={player.isWinner}
-          position={tablePositions[player.tableNum]} // 테이블 번호에 따른 위치를 전달합니다.
+          position={tablePositions[index]} // 테이블 번호에 따른 위치를 전달합니다.
         />
       ))}
     </div>
