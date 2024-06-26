@@ -13,15 +13,15 @@
 }
 
 .player-image {
-  width: 50px; /* 이미지 크기 조정 */
-  height: 50px;
-  border-radius: 50%; /* 원형으로 만들기 */
+  width: 80px; /* 이미지 크기 조정 */
+  height: 80px;
+  border-radius: 40%; /* 원형으로 만들기 */
 }
 
 .crown {
   position: absolute;
-  top: -30px; /* 왕관의 위치를 조정하여 사진 위에 배치 */
-  font-size: 30px;
+  top: -60px; /* 왕관의 위치를 조정하여 사진 위에 배치 */
+  font-size: 60px;
 }
 
 .player-name {
