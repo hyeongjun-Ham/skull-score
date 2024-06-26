@@ -6,7 +6,6 @@ const Topbar = () => {
     const navigate = useNavigate();
 
     const handleMainClick = () => {
-        console.log('메인 버튼 클릭됨');
         navigate('/score')
     };
 
@@ -16,9 +15,9 @@ const Topbar = () => {
     };
 
     const handlePersonalStatsClick = () => {
-        console.log('개인 통계 버튼 클릭됨');
-        navigate('/persional-statistics')
+        navigate('/personal-statistics')
     };
+    
     return (
         <div className="topbar">
             <div className="topbar-left"></div>
