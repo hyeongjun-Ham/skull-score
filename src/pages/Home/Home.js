@@ -12,7 +12,7 @@ const Home = () => {
 
     return (
         <div className="home">
-            <button onClick={toScore}> 입장스~ </button>
+            <button className='home-button' onClick={toScore}> 입장스~ </button>
         </div>
     );
 };

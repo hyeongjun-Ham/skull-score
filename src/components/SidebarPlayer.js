@@ -2,16 +2,15 @@ import React from "react"
 import '../styles/Sidebar.css';
 
 const SidebarPlayer = ({ onPlayerSelect }) => {
+    const players = ['소장님', '서승완', '전창혁', '지선학', '함형준', '이가연', '황우현', '박주영'];
+
     return (
         <div className="sidebar">
-            <button onClick={() => onPlayerSelect('정창영')}>정창영</button>
-            <button onClick={() => onPlayerSelect('서승완')}>서승완</button>
-            <button onClick={() => onPlayerSelect('전창혁')}>전창혁</button>
-            <button onClick={() => onPlayerSelect('지선학')}>지선학</button>
-            <button onClick={() => onPlayerSelect('함형준')}>함형준</button>
-            <button onClick={() => onPlayerSelect('이가연')}>이가연</button>
-            <button onClick={() => onPlayerSelect('황우현')}>황우현</button>
-            <button onClick={() => onPlayerSelect('박주영')}>박주영</button>
+            {players.map(player => (
+                <button key={player} onClick={() => onPlayerSelect(player)}>
+                    {player}
+                </button>
+            ))}
         </div>
     );
 }

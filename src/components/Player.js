@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/Player.css';
 
-const Player = ({ name, tableNum, isWinner, position }) => {
+const Player = ({ name, isWinner, position }) => {
 
   const playerImage = require(`../assets/${name}.png`);
 

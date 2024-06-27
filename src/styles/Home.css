@@ -1,20 +1,11 @@
 /* Home.css */
-body,
-html {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
-}
-
 .home {
-    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 50dvh 50dvh 50dvh 50dvh;
 }
 
-button {
+.home-button {
     padding: 15px 30px;
     font-size: 1.3em;
     background-color: #007BFF;
@@ -25,12 +16,12 @@ button {
     transition: background-color 0.3s, transform 0.3s;
 }
 
-button:hover {
+.home-button:hover {
     background-color: #0056b3;
     transform: scale(1.05);
 }
 
-button:active {
+.home-button:active {
     background-color: #004085;
     transform: scale(1.02);
 }
