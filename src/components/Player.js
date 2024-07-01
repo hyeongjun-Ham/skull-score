@@ -9,7 +9,7 @@ const Player = ({ name, isWinner, position }) => {
     <div className="player" style={position}>
       <div className='player-container'>
         {isWinner === "Y" && <span className="crown">👑</span>}
-        <img src={playerImage} alt={name} className="player-image" />
+        <img src={playerImage} alt={name} className="players-image" />
       </div>
 
     </div>

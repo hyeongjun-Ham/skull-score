@@ -12,7 +12,7 @@
   position: relative;
 }
 
-.player-image {
+.players-image {
   width: 80px; /* 이미지 크기 조정 */
   height: 80px;
   border-radius: 40%; /* 원형으로 만들기 */
